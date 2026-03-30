@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    background-color: var(--cor-2);
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}

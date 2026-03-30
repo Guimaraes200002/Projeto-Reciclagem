@@ -1,0 +1,7 @@
+/* GLOBAL */
+@import "./global/header.css";
+@import "./global/body.css";
+
+/* UTILITARIO */
+@import "./utilitario/cores.css";
+@import "./utilitario/fonte.css";
