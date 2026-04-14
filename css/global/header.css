@@ -4,13 +4,12 @@ header {
 }
 
 .header {
-    padding: 20px;
+    padding: var(--espacamento-md);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: var(--espacamento-md);
 }
-
 
 .header img {
     width: 40px;
@@ -18,6 +17,6 @@ header {
 }
 
 .header h1 {
-    font-size: 40px;
+    font-size: clamp(28px, 5vw, 40px);
     font-weight: bolder;
 }

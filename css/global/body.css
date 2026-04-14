@@ -1,7 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0px;
     margin: 0px;
     background-color: var(--cor-0);
+}
+
+main {
+    padding: var(--espacamento-md);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cidades {
@@ -31,19 +47,29 @@ body {
     color: var(--cor-0);
 }
 
+.cidades a:focus {
+    outline: 2px solid var(--cor-1);
+    outline-offset: 2px;
+}
+
 .btn-voltar {
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
     background: var(--cor-2);
     color: var(--cor-5);
-    border-end-end-radius: 4px;
+    border-radius: 4px;
     transition: 0.3s;
 }
 
 .btn-voltar:hover {
     background: var(--cor-3);
     color: var(--cor-0);
+}
+
+.btn-voltar:focus {
+    outline: 2px solid var(--cor-2);
+    outline-offset: 2px;
 }
 
 .container-endereco {
@@ -89,6 +115,11 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-topo:focus {
+  outline: 2px solid var(--cor-3);
+  outline-offset: 2px;
+}
+
 
 
 
@@ -97,6 +128,20 @@ body {
 
 @media (max-width: 768px) {
   .container-endereco {
+    grid-template-columns: 1fr;
+    margin: var(--espacamento-md) auto;
+    padding: var(--espacamento-md);
+  }
+
+  .mapa iframe {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .info {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .cidades {
     grid-template-columns: 1fr;
     border-radius: 0px;
   }
@@ -111,5 +156,26 @@ body {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+  }
+}
+
+/* Media query para telas muito pequenas */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    padding: var(--espacamento-sm);
+  }
+
+  main {
+    padding: var(--espacamento-sm);
+  }
+
+  .cidades {
+    gap: var(--espacamento-xs);
+    padding: var(--espacamento-xs);
+  }
+
+  .container-endereco {
+    margin: var(--espacamento-md) auto;
   }
 }
