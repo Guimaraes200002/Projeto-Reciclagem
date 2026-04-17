@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    background-color: var(--cor-2);
 }
 
 .header {
@@ -19,4 +18,46 @@ header {
 .header h1 {
     font-size: clamp(28px, 5vw, 40px);
     font-weight: bolder;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacamento-md);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-5);
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.menu ul {
+  font-size: 24px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-5);
+    font-weight: 500;
+    transition: 0.3s;
+}
+.menu a:hover {
+    color: var(--cor-2);
+}
+
+.menu a:focus {
+    outline: 2px solid var(--cor-5);
+    outline-offset: 2px;
 }
